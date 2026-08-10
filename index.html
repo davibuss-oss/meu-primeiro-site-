@@ -35,18 +35,261 @@
 </head>
 
 <body>
+<!DOCTYPE html>
 
-    <h1>Esse é meu primeiro site</h1>
+<html lang="pt-BR">
 
-    <p>Estou aprendendo a criar sites no VS Code!</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <button onclick="mostrarMensagem()">
-        Clique aqui
+```
+<title>Meu Mundo na Programação</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- MENU -->
+<header>
+    <div class="logo">&lt;/DEV&gt;</div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#objetivos">Objetivos</a>
+    </nav>
+</header>
+
+
+<!-- INÍCIO -->
+<section id="inicio" class="hero">
+
+    <div class="hero-text">
+
+        <p class="tag">🚀 FUTURO PROGRAMADOR</p>
+
+        <h1>
+            Olá, eu sou um
+            <span>estudante do Paraná.</span>
+        </h1>
+
+        <p class="descricao">
+            Estou começando minha jornada no mundo da programação
+            e tenho muita vontade de aprender, evoluir e construir
+            um futuro incrível através da tecnologia.
+        </p>
+
+        <div class="botoes">
+            <a href="#sobre" class="btn principal">
+                Conheça minha história
+            </a>
+
+            <a href="#objetivos" class="btn secundario">
+                Meus objetivos
+            </a>
+        </div>
+
+    </div>
+
+    <div class="codigo-card">
+
+        <div class="bolinhas">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <pre><code>
+```
+
+<span class="roxo">const</span> estudante = {
+estado: <span class="verde">"Paraná"</span>,
+sonho: <span class="verde">"Programar"</span>,
+foco: <span class="verde">"Aprender"</span>,
+objetivo: <span class="verde">"Crescer"</span>
+};
+
+<span class="azul">while</span> (vontade) {
+aprender();
+praticar();
+evoluir();
+} </code></pre>
+
+```
+    </div>
+
+</section>
+
+
+<!-- SOBRE -->
+<section id="sobre" class="secao">
+
+    <div class="titulo">
+        <p>01 — SOBRE MIM</p>
+
+        <h2>
+            Começando pequeno,
+            <span>sonhando grande.</span>
+        </h2>
+    </div>
+
+    <div class="sobre-grid">
+
+        <div class="texto-sobre">
+            <p>
+                Sou um estudante do Paraná que está começando
+                sua caminhada no mundo da programação.
+            </p>
+
+            <p>
+                Ainda tenho muito para aprender, mas tenho algo
+                que considero muito importante: vontade de crescer.
+            </p>
+
+            <p>
+                Quero transformar minhas ideias em projetos,
+                aprender novas tecnologias e descobrir até onde
+                posso chegar através da programação.
+            </p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icone">💻</div>
+                <h3>Programação</h3>
+                <p>
+                    Aprendendo a criar sites e transformar ideias
+                    em projetos reais.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icone">📚</div>
+                <h3>Aprendizado</h3>
+                <p>
+                    Cada erro é uma oportunidade para aprender
+                    alguma coisa nova.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icone">🔥</div>
+                <h3>Determinação</h3>
+                <p>
+                    Quero continuar evoluindo e nunca parar
+                    de buscar conhecimento.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- OBJETIVOS -->
+<section id="objetivos" class="objetivos">
+
+    <div class="titulo centralizado">
+
+        <p>02 — MEUS OBJETIVOS</p>
+
+        <h2>
+            O futuro começa
+            <span>agora.</span>
+        </h2>
+
+    </div>
+
+    <div class="objetivos-grid">
+
+        <div class="objetivo">
+            <span>01</span>
+            <h3>Aprender</h3>
+            <p>
+                Aprender cada vez mais sobre programação,
+                tecnologia e desenvolvimento.
+            </p>
+        </div>
+
+        <div class="objetivo">
+            <span>02</span>
+            <h3>Criar</h3>
+            <p>
+                Desenvolver meus próprios sites, sistemas
+                e projetos.
+            </p>
+        </div>
+
+        <div class="objetivo">
+            <span>03</span>
+            <h3>Evoluir</h3>
+            <p>
+                Melhorar minhas habilidades todos os dias
+                e enfrentar novos desafios.
+            </p>
+        </div>
+
+        <div class="objetivo">
+            <span>04</span>
+            <h3>Crescer</h3>
+            <p>
+                Construir uma carreira e conquistar meu
+                espaço no mundo da programação.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FRASE FINAL -->
+<section class="final">
+
+    <div class="brilho"></div>
+
+    <p>MINHA JORNADA ESTÁ APENAS COMEÇANDO</p>
+
+    <h2>
+        Um dia eu vou olhar para trás
+        e ter orgulho de onde comecei.
+    </h2>
+
+    <button onclick="mensagem()">
+        🚀 Continuar minha jornada
     </button>
 
-    <p id="mensagem"></p>
+    <div id="mensagem"></div>
 
-    <script src="script.js"></script>
+</section>
+
+
+<!-- RODAPÉ -->
+<footer>
+
+    <div class="logo">&lt;/DEV&gt;</div>
+
+    <p>
+        Feito por um estudante do Paraná com vontade de crescer.
+    </p>
+
+    <p class="copyright">
+        © 2026 — Minha Jornada na Programação
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+```
 
 </body>
 </html>
